@@ -1,4 +1,4 @@
-# Nuxt Docs Template
+# Nuxt Docs UI Theme
 
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
 
@@ -31,6 +31,9 @@ Make sure to install the dependencies:
 
 ```bash
 pnpm install
+# pnpm@10 and later requires the following additional code
+pnpm approve-builds
+pnpm rebuild
 ```
 
 ## Development Server
