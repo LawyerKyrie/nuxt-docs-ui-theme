@@ -15,7 +15,7 @@ export default defineAppConfig({
     siteName: 'Nuxt Docs UI Theme'
   },
   header: {
-    title: '',
+    title: '', // Insert of title removes AppLogo
     to: '/',
     logo: {
       alt: '',
@@ -26,7 +26,7 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/LawyerKyrie/nuxt-docs-ui-theme',
+      'to': 'https://github.com/LawyerKyrie/',
       'target': '_blank',
       'aria-label': 'GitHub'
     }]
