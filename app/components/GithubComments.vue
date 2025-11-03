@@ -4,12 +4,13 @@ import Giscus from '@giscus/vue'
 import { useOnline } from '@vueuse/core'
 
 const online = useOnline().value
-
+/*
 const time2load = ref(false)
 const timer = setTimeout(() => {
   time2load.value = true
   clearTimeout(timer)
 }, 1200)
+*/
 </script>
 
 <template>
@@ -30,7 +31,6 @@ const timer = setTimeout(() => {
       theme="noborder_dark"
       lang="en"
       crossorigin="anonymous"
-      loading="lazy"
       async
     />
   <!-- <ConfirmCookies v-if="time2load" /> -->
