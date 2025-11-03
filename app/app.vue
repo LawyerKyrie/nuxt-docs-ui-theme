@@ -27,24 +27,6 @@ useSeoMeta({
 provide('navigation', navigation)
 </script>
 
-<!--
-<script src="https://giscus.app/client.js"
-        data-repo="LawyerKyrie/nuxt-docs-ui-theme"
-        data-repo-id="R_kgDOQGEPng"
-        data-category="Comments"
-        data-category-id="DIC_kwDOQGEPns4CxXig"
-        data-mapping="url"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
--->
-
 <template>
   <UApp>
     <NuxtLoadingIndicator />
@@ -67,7 +49,6 @@ provide('navigation', navigation)
         :files="files"
         :navigation="navigation"
       />
-      <GithubComments />
     </ClientOnly>
   </UApp>
 </template>
