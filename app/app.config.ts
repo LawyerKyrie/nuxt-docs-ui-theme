@@ -24,12 +24,7 @@ export default defineAppConfig({
     },
     search: true,
     colorMode: true,
-    links: [{
-      'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/LawyerKyrie/',
-      'target': '_blank',
-      'aria-label': 'GitHub'
-    }]
+    // links: [{ /* Removed link to GitHub here */ }]
   },
   footer: {
     credits: `@LawyerKyrie • © ${new Date().getFullYear()}`,
@@ -68,5 +63,14 @@ export default defineAppConfig({
         target: '_blank'
       }]
     }
+  },
+  giscus: {
+    repo: 'LawyerKyrie/nuxt-docs-ui-theme',
+    repoId: 'R_kgDOQGEPng',
+    category: 'Comments',
+    categoryId: 'DIC_kwDOKfRikM4Capmi',
+    mapping: 'url',
+    inputPosition: 'bottom',
+    theme: 'noborder_dark'
   }
 })
