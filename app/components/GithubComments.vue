@@ -1,6 +1,8 @@
 <!-- components/GithubComments.vue -->
 <script setup lang="ts">
 import Giscus from '@giscus/vue'
+
+/*
 import { useOnline } from '@vueuse/core'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router' // or just useRoute() which is auto-imported in Nuxt 3/4
@@ -11,6 +13,7 @@ const route = useRoute()
 const isNotRootPage = computed(() => {
   return route.path !== '/'
 })
+*/
 
 const online = useOnline().value
 
@@ -18,12 +21,12 @@ const time2load = ref(false)
 const timer = setTimeout(() => {
   time2load.value = true
   clearTimeout(timer)
-}, 1200)
+}, 2000)
 </script>
 
 <template>
   <span
-    v-if="online && isNotRootPage"
+    v-if="online"
     class="relative"
   >
     <Giscus
