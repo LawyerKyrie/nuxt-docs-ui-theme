@@ -36,6 +36,7 @@ provide('navigation', navigation)
     <UMain>
       <NuxtLayout>
         <NuxtPage />
+        <GithubComments />
       </NuxtLayout>
     </UMain>
 

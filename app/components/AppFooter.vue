@@ -12,7 +12,6 @@ const { footer } = useAppConfig()
       <UColorModeButton v-if="footer?.colorMode" />
 
       <template v-if="footer?.links">
-        <GithubComments />
         <UButton
           v-for="(link, index) of footer?.links"
           :key="index"
