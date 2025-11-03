@@ -1,10 +1,9 @@
 <!-- components/GithubComments.vue -->
 <script setup lang="ts">
-import Giscus from '@giscus/vue' 
-// import { useOnline } from '@vueuse/core'
-// const online = useOnline().value
+import Giscus from '@giscus/vue'
+import { useOnline } from '@vueuse/core'
 
-const appConfig = useAppConfig() as any
+const online = useOnline().value
 
 const time2load = ref(false)
 const timer = setTimeout(() => {
@@ -14,33 +13,28 @@ const timer = setTimeout(() => {
 </script>
 
 <template>
-  <!--
   <span
     v-if="online"
     class="relative"
   >
-  -->
-  <div>
     <Giscus
-      :repo="appConfig.giscus.repo"
-      :repo-id="appConfig.giscus.repoId"
+      repo="LawyerKyrie/nuxt-docs-ui-theme"
+      repo-id="R_kgDOQGEPng"
       category="Comments"
-      :category-id="appConfig.giscus.categoryId"
-      :mapping="appConfig.giscus.mapping"
-      :input-position="appConfig.giscus.inputPosition"
-      :theme="appConfig.giscus.theme"
+      category-id="DIC_kwDOQGEPns4CxXig"
+      mapping="url"
       strict="1"
       reactions-enabled="1"
       emit-metadata="0"
+      input-position="bottom"
+      theme="noborder_dark"
       lang="en"
       crossorigin="anonymous"
       loading="lazy"
       async
     />
-  </div>
- 
   <!-- <ConfirmCookies v-if="time2load" /> -->
-  <!-- </span> -->
+  </span>
 </template>
 
 <style scooped>

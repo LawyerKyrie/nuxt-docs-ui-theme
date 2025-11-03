@@ -23,7 +23,7 @@ export default defineAppConfig({
       dark: ''
     },
     search: true,
-    colorMode: true,
+    colorMode: true
     // links: [{ /* Removed link to GitHub here */ }]
   },
   footer: {
@@ -63,14 +63,5 @@ export default defineAppConfig({
         target: '_blank'
       }]
     }
-  },
-  giscus: {
-    repo: 'LawyerKyrie/nuxt-docs-ui-theme',
-    repoId: 'R_kgDOQGEPng',
-    category: 'Comments',
-    categoryId: 'DIC_kwDOKfRikM4Capmi',
-    mapping: 'url',
-    inputPosition: 'bottom',
-    theme: 'noborder_dark'
   }
 })

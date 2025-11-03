@@ -45,7 +45,6 @@ provide('navigation', navigation)
 </script>
 -->
 
-
 <template>
   <UApp>
     <NuxtLoadingIndicator />

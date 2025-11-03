@@ -36,6 +36,10 @@ export default defineNuxtConfig({
       autoSubfolderIndex: false
     }
   },
+  typescript: {
+    shim: false,
+    typeCheck: true
+  },
 
   eslint: {
     config: {
@@ -74,9 +78,5 @@ export default defineNuxtConfig({
         ]
       }
     ]
-  },
-   typescript: {
-    shim: false,
-    typeCheck: true
   }
 })
