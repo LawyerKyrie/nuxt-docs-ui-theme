@@ -1,8 +1,10 @@
 # Nuxt Docs UI Theme
 
 [![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+"
+This repo is a clean and basic Nuxt docs template added with giscus, GitHub commenting.
 
-Use this template to build your own documentation with [Nuxt UI](https://ui.nuxt.com) quickly.
+Use this template to build your own documentation with [Nuxt UI](https://ui.nuxt.com) if you want the reader to have the possibility to add comments to all your markdown pages.
 
 - [Live demo](https://nuxt-docs-ui-theme.vercel.app/)
 - [Documentation](https://ui.nuxt.com/docs/getting-started/installation)

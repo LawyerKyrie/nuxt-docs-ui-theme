@@ -12,10 +12,10 @@ orientation: horizontal
 :hero-background
 
 #title
-Ship Beautiful [Documentation]{.text-primary}.
+[Nuxt Docs]{.text-primary} with user comments
 
 #description
-Build professional documentation with Nuxt UI's powerful components, enhanced typography, and seamless Nuxt Content integration. The same system trusted by the entire [Nuxt ecosystem](https://nuxt.com).
+Build professional documentation with giscus, GitHub Commenting system. A system that give the user opportunity to add comments to all your markdown pages.
 
 #links
   :::u-button
