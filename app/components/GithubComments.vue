@@ -1,9 +1,8 @@
 <!-- components/GithubComments.vue -->
 <script setup lang="ts">
 import Giscus from '@giscus/vue'
-
-/*
 import { useOnline } from '@vueuse/core'
+/*
 import { computed } from 'vue'
 import { useRoute } from 'vue-router' // or just useRoute() which is auto-imported in Nuxt 3/4
 
