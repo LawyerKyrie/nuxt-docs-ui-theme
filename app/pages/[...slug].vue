@@ -76,6 +76,7 @@ const links = computed(() => {
         :value="page"
       />
 
+      <!-- Added 04.11.2025 -->
       <GithubComments />
 
       <USeparator v-if="surround?.length" />

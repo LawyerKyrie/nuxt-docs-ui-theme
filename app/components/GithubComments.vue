@@ -2,17 +2,6 @@
 <script setup lang="ts">
 import Giscus from '@giscus/vue'
 import { useOnline } from '@vueuse/core'
-/*
-import { computed } from 'vue'
-import { useRoute } from 'vue-router' // or just useRoute() which is auto-imported in Nuxt 3/4
-
-const route = useRoute()
-
-// Computed property to check if the current path is the root path ("/")
-const isNotRootPage = computed(() => {
-  return route.path !== '/'
-})
-*/
 
 const online = useOnline().value
 
@@ -20,7 +9,7 @@ const time2load = ref(false)
 const timer = setTimeout(() => {
   time2load.value = true
   clearTimeout(timer)
-}, 2000)
+}, 1000)
 </script>
 
 <template>
@@ -28,6 +17,7 @@ const timer = setTimeout(() => {
     v-if="online"
     class="relative"
   >
+    <!-- CHANGE THE FOLLOWING DATA ON https://giscus.app/ -->
     <Giscus
       repo="LawyerKyrie/nuxt-docs-ui-theme"
       repo-id="R_kgDOQGEPng"
@@ -46,17 +36,3 @@ const timer = setTimeout(() => {
   <!-- <ConfirmCookies v-if="time2load" /> -->
   </span>
 </template>
-
-<style scooped>
-/*
-Inserted in MardownPost.vue - it was given the best style.
-
-sources:
-https://giscus.app/
-https://github.com/giscus/giscus-component/tree/main
-https://www.freecodecamp.org/news/github-discussions-as-chat-system/
-https://github.com/settings/installations/43603183
-https://github.com/giscus/giscus-component/blob/main/vue/src/App.vue
-input-position="bottom"
-*/
-</style>
