@@ -50,7 +50,7 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/LawyerKyrie/nuxt-docs-ui-theme/content',
+      edit: 'https://github.com/LawyerKyrie/nuxt-docs-ui-theme/edit/main/content',
       links: [{
         icon: 'i-lucide-star',
         label: 'Star on GitHub',
