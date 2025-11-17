@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+
 const { seo } = useAppConfig()
 
 const { data: navigation } = await useAsyncData('navigation', () => queryCollectionNavigation('docs'))
@@ -21,7 +23,8 @@ useHead({
 useSeoMeta({
   titleTemplate: `%s - ${seo?.siteName}`,
   ogSiteName: seo?.siteName,
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
+  googleSiteVerification: 'OBR08WFLQQiJUKuLzi19h9dr7I99cVDn5UzDi9mAjwA'
 })
 
 provide('navigation', navigation)
@@ -30,6 +33,7 @@ provide('navigation', navigation)
 <template>
   <UApp>
     <NuxtLoadingIndicator />
+    <Analytics />
 
     <AppHeader />
 
